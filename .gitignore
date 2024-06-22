@@ -46,5 +46,5 @@ localhost-key.pem
 localhost.pem
 pages/linepay-test/index-nouse.js
 
-/public/main-card
+# /public/main-card
 # /public/size-chart
