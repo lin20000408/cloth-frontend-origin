@@ -1,0 +1,311 @@
+
+  .title {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    border-bottom: 3px solid black;
+    width: 120px;
+    margin: auto;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  .title p {
+    margin:0
+  }
+  .ods-session1 {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 100px 0;
+    border: 3px solid #abc8bc;
+      border-radius: 10px;
+    padding: 30px 10px 20px 10px;
+  }
+  
+  .ods-session2 {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 15px;
+    position: relative;
+  }
+  
+  .back-orderlist-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  .keep-buying {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+    font-weight: 600;
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  .part-left {
+    width: 60%;
+    margin-right: 20px;
+  }
+  
+  .part-right {
+    width: 40%;
+    height: 350px;
+      border: 3px solid #abc8bc;
+        border-radius: 10px;
+    padding: 15px 10px;
+  }
+  
+  .ords {
+    width: 100%;
+      border: 3px solid #abc8bc;
+        border-radius: 10px;
+    padding: 15px 10px 30px 10px;
+  }
+  
+  .ords-title {
+    border-bottom: 1px solid black;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
+  .part-right-count {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    padding: 15px 10px;
+    margin:0;
+  }
+
+  .product-info {
+    display: flex;
+    gap: 22px;
+  }
+  
+  .ords-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  .ords-info{
+    padding: 0;
+  }
+  .product-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .product-name p {
+    margin:0
+  }
+
+  
+  #Product-count {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .productRow-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  
+  .back-orderlist {
+    margin: 0px 0 30px;
+    padding: 10px;
+    position: relative;
+  }
+  .back-orderlist2{
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .productRow-button {
+      border-radius: 0;
+      font-weight: 600;
+      padding: 0 10px 0 10px;
+      color: black;
+      border: 2px solid black;
+     
+     
+    }
+    .ods-session1 {
+      width: 100%;
+      flex-direction: column;
+      margin: 50px 0 0 0;
+    }
+  
+    .part-left {
+      width: 100%;
+      margin-right: 0px;
+    }
+/*   
+    thead {
+      display: none;
+    } */
+  
+    /* 控制所有商品資訊 */
+    .products-info {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* 控制所有商品底下的每個tr */
+    .products-info > tr {
+      grid-template-columns: 1fr 40%;
+      display: grid;
+      width: 100%;
+    }
+  
+    /* 單一產品的圖跟價錢 名稱 */
+    .product-info {
+      grid-column: 1 / span 2;
+      grid-row: 1;
+    }
+  
+    .products-info::before {
+      content: "訂單內容";
+      font-size: 18px;
+      display: block;
+      text-align: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid black;
+      width: 100%;
+    }
+  
+    /* 控制所有商品底下的每個tr的td  */
+    .products-info > tr > th:nth-child(1) {
+      border: none;
+    }
+  
+    /* input按鈕父層 */
+    .products-info > tr > td:nth-child(2) {
+      grid-column: 1 / 3;
+      grid-row: 2;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      margin: 0;
+    }
+  
+    .products-info > tr > td:nth-child(2)::before {
+      content: "數量";
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    /* input按鈕本人 */
+    .Product-count {
+      width: 60px;
+      margin: 0;
+    }
+  
+    /* 評論按鈕 */
+    .products-info > tr > td:nth-child(5) {
+      grid-column: 1 / 2;
+      grid-row: 2;
+      display: flex;
+      justify-content: flex-start;
+      border: none;
+      width: 100%;
+      margin: 0;
+      margin-left: 25px;
+    }
+  
+    /* 單價 */
+    .products-info > tr > td:nth-child(3) {
+      grid-column: 1 / 3;
+      grid-row: 3;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border: none;
+      margin: 0;
+    }
+  
+    .products-info > tr > td:nth-child(3)::before {
+      content: "單價";
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    /* 總價 */
+    .products-info > tr > td:nth-child(4) {
+      grid-column: 1 / 3;
+      grid-row: 4;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border: none;
+      margin: 0;
+    }
+  
+    .products-info > tr > td:nth-child(4)::before {
+      content: "總價";
+      margin-right: 10px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .ods-session2 {
+      flex-direction: column-reverse;
+      margin: 30px 0 30px 0;
+      gap: 30px;
+    }
+    .part-right {
+      width: 100%;
+      height: 350px;
+      padding: 30px 10px;
+    }
+  
+    .part-right-count:nth-child(5) {
+      border-bottom: 1px solid;
+    }
+  
+    .back-orderlist {
+      display: none;
+    }
+    .keep-buying {
+      display: none;
+    }
+  
+    .back-orderlist2 {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 0 30px 0;
+    }
+    .back-orderlist-link2 {
+      border-radius: 0;
+      font-weight: 600;
+      padding: 10px;
+      border: 2px solid black;
+    }
+  
+    .keep-buying2 {
+      border-radius: 0;
+      font-weight: 600;
+      padding: 10px;
+      border: 2px solid black;
+    }
+  }
+  

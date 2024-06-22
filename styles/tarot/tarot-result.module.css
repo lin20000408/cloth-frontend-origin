@@ -1,0 +1,359 @@
+.tarot-result * {
+  margin: 0;
+  padding: 0;
+}
+/* 背景動畫 */
+.tarot-result :root {
+  --twinkle-duration: 1s;
+}
+.stars-wrapper {
+  pointer-events: none;
+  background: linear-gradient(#16161d, #1f1f3a, #3b2f4a);
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.stars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: twinkle var(--twinkle-duration) ease-in-out infinite;
+          animation: twinkle var(--twinkle-duration) ease-in-out infinite;
+}
+.stars:nth-child(2) {
+  -webkit-animation-delay: calc(var(--twinkle-duration) * -0.33);
+          animation-delay: calc(var(--twinkle-duration) * -0.33);
+}
+.stars:nth-child(3) {
+  -webkit-animation-delay: calc(var(--twinkle-duration) * -0.66);
+          animation-delay: calc(var(--twinkle-duration) * -0.66);
+}
+@-webkit-keyframes twinkle {
+  25% {
+    opacity: 0;
+  }
+}
+@keyframes twinkle {
+  25% {
+    opacity: 0;
+  }
+}
+.star {
+  fill: white;
+}
+.star:nth-child(3n) {
+  opacity: 0.8;
+}
+.star:nth-child(7n) {
+  opacity: 0.6;
+}
+.star:nth-child(13n) {
+  opacity: 0.4;
+}
+.star:nth-child(19n) {
+  opacity: 0.2;
+}
+
+.comet {
+  transform-origin: center center;
+  animation: comet 8s linear infinite;
+}
+@keyframes comet {
+  0%, 40% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60%, 100% {
+    transform: translateX(-100vmax);
+    opacity: 0;
+  }
+}
+.comet-a {
+  animation-delay: -1.7s;
+}
+.comet-b {
+  animation-delay: -2s;
+}
+.comet-c {
+  animation-delay: -5s;
+}
+.comet-d {
+  animation-delay: -2s;
+}
+.comet-e {
+  animation-delay: -4s;
+}
+.comet-f {
+  animation-delay: -1s;
+}
+.comet-g {
+  animation-delay: -3s;
+}
+.comet-h {
+  animation-delay: -2.5s;
+}
+.comet-i {
+  animation-delay: -6.3s;
+}
+.comet-j {
+  animation-delay: -5.8s;
+}
+.comet-k {
+  animation-delay: -4.8s;
+}
+.comet-l {
+  animation-delay: -3.2s;
+}
+.comet-m {
+  animation-delay: -2.2s;
+}
+.comet-n {
+  animation-delay: -1.5s;
+}
+.comet-o {
+  animation-delay: -6.5s;
+}
+.comet-p {
+  animation-delay: -2.7s;
+}
+.comet-q {
+  animation-delay: -5.7s;
+}
+.comet-r {
+  animation-delay: -1.3s;
+}
+.comet-s {
+  animation-delay: -4.3s;
+}
+.comet-t {
+  animation-delay: -3.4s;
+}
+.comet-u {
+  animation-delay: -2.4s;
+}
+.comet-v {
+  animation-delay: -2.8s;
+}
+.comet-w {
+  animation-delay: -1.9s;
+}
+.comet-x {
+  animation-delay: -1.2s;
+}
+.comet-y {
+  animation-delay: -6.8s;
+}
+.comet-z {
+  animation-delay: -5.4s;
+}
+.comet-1 {
+  animation-delay: -1.6s;
+}
+.comet-2 {
+  animation-delay: -4.2s;
+}
+.comet-3 {
+  animation-delay: -3.7s;
+}
+.comet-4 {
+  animation-delay: -2.1s;
+}
+
+.tarot-result main{
+  display: flex;
+  justify-content: space-evenly;
+}
+.container {
+  height: 100svh;
+}
+.tarotContent{
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.tarot-result main img {
+  width: 220px;
+  border-radius: 5px;
+}
+.btn {
+  color: white;
+  box-shadow: 1px 5px 5px rgba(0, 0, 0, 1);
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: #9370db;
+  /* transition: transform 0.3s ease; */
+}
+/* 滑鼠懸停時保持紫色 */
+.btn:hover {
+  background-color: #9370db;
+  color: white;
+  /* transform: scale(1.1); */
+}
+/* 點擊時保持紫色 */
+.btn:active,
+.btn:focus {
+  background-color: #9370db !important;
+  color: white;
+}
+.tarot-result main a {
+  text-decoration: none;
+  color: white;
+}
+
+.custom-btn {
+  width: 160px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-7 {
+  background: #9370db;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: white;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover,
+.btn-7 a:hover {
+  color: white;
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: white;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before,
+.btn-7 a:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after,
+.btn-7 a:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before,
+.btn-7 a:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after,
+.btn-7 a:hover:after {
+  width: 100%;
+}
+.btn-7 a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-11 {
+  overflow: hidden;
+  /* 添加右邊框線 */
+  border-right: 2px solid transparent;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+/* 添加按鈕懸停時的邊框顏色 */
+.btn-11:hover {
+  border-right-color: white;
+}
+.custom-btn.btn-11:hover:before {
+ /* 滑鼠懸停時的邊框閃爍效果 */
+  animation: none; /* 禁用動畫 */
+}
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  61% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* 平板模式 */
+@media (min-width: 768px) {
+  .textContent {
+    width: 500px;
+  }
+}
+
+/* 電腦模式 */
+@media screen and (min-width: 1024px) {
+  .tarotContent{
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}

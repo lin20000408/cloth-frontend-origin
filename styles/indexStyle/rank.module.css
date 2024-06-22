@@ -1,0 +1,21 @@
+
+@keyframes homeAnimte {
+  from {
+    opacity: 0; /* 動畫開始時，透明度為1，表示顯示 */
+  }
+  to {
+    opacity: 1; /* 動畫結束時，透明度為0，表示隱藏 */
+  }
+}
+.loading{
+  animation: homeAnimte 2s linear forwards 0s
+}
+.rankA{
+    width: 85px;
+    height: 35px;
+    border-bottom: 2px solid black;
+    text-align:center;
+    padding-bottom: 10px;
+    text-decoration:none;
+    /* margin: 0; */
+  }

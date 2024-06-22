@@ -1,0 +1,43 @@
+.page-user-header {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
+
+.page-nav {
+  display: flex;
+  justify-content: center;
+}
+.page-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.page-nav .page-nav-item {
+  margin: 10px;
+}
+
+.page-nav li .active {
+  font-weight: bold;
+}
+
+/* main { */
+/*   display: flex; */
+/*   justify-content: center; */
+/* } */
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-item {
+  margin: 10px;
+}
+
+.post-thumb {
+  width: 400px;
+  height: 400px;
+}

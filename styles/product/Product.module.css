@@ -1,0 +1,415 @@
+/* -color */
+.red {
+  color: #9d0e16;
+}
+
+/* -font size */
+.text-10 {
+  font-size: 0.625rem;
+}
+.text-16 {
+  font-size: 1rem;
+}
+.text-20 {
+  font-size: 1.25rem;
+}
+.text-21 {
+  font-size: 1.3125rem;
+}
+.text-30 {
+  font-size: 1.875rem;
+}
+.text-38 {
+  font-size: 2.375rem;
+  font-weight: 600;
+}
+/* ?computer */
+
+.container-div {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 0;
+}
+
+.border-weight{
+    border:solid 1px #bdbcbc;
+    margin-right: 30%;
+    
+}
+.a-div {
+  text-decoration: none;
+  color: black;
+  cursor:pointer;
+}
+/* -前半段 */
+
+/* -照片小圖側欄 */
+
+
+
+.scroll-container {
+  padding-left: 0.225rem;
+}
+.scroll {
+  width: 1rem;
+  height: 12.5rem;
+}
+.center-css{
+    margin-left:40%;
+}
+/* -主商品圖 */
+
+
+
+.details-content {
+  width: 23.5rem;
+  display: flex;
+}
+.size-btn {
+  --bs-btn-padding-y: 0;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+}
+.size-toggle {
+  --bs-btn-padding-y: 0;
+  --bs-btn-padding-x: 0.5rem;
+  --bs-btn-font-size: 0.75rem;
+}
+.btn-size-chart{
+    --bs-btn-padding-y: 0; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;
+}
+/* -右側細節 */
+
+.hr-mt {
+  margin-top: -2%;
+}
+
+.scrolling-box {
+    background-color: #eaeaea00;
+    display: block;
+    /* width: 200px;*/
+    height: 600px; 
+    padding: 1em;
+    overflow-y: scroll;
+    /* text-align: center; */
+  }
+  .scrolling-box::-webkit-scrollbar {
+    display: none;
+  }
+  section .scroll-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+.goods-color-radio-container-div {
+  width: 3.125rem;
+}
+.goods-color-radio-container {
+  position: absolute;
+  z-index: 0;
+  width: 1.875rem;
+  height: 1.56rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 45%;
+  cursor: pointer;
+}
+.goods-color-radio-container:active {
+  position: absolute;
+  z-index: 0;
+  width: 1.875rem;
+  height: 1.56rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 45%;
+}
+.goods-color-radio {
+  position: absolute;
+  z-index: 1;
+  width: 1.56rem;
+  height: 1.25rem;
+  background-color: black;
+  border: 1px solid transparent;
+  border-radius: 45%; /* 圆形边框 */
+  /* cursor: pointer; */
+}
+.goods-color-radio:active {
+  border: 1px solid white;
+}
+.goods-size-radio-container {
+  position: absolute;
+  z-index: 0;
+  width: 1.56rem;
+  height: 1.25rem;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 45%;
+  cursor: pointer;
+}
+.goods-size-radio-container:active {
+  position: absolute;
+  z-index: 0;
+  width: 1.56rem;
+  height: 1.25rem;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 45%;
+}
+.goods-size-radio {
+  position: absolute;
+  z-index: 1;
+  width: 1.56rem;
+  height: 1.25rem;
+
+  border: 1px solid transparent;
+  border-radius: 45%; /* 圆形边框 */
+  /* cursor: pointer; */
+}
+.goods-size-radio:active {
+  border: 1px solid white;
+}
+.add-button {
+  width: 100px;
+  height: 2.5rem;
+  background-color: black;
+
+ 
+  
+  cursor: pointer;
+}
+.add-button a {
+  color: white;
+}
+
+.filter-cus {
+  margin-right: 50%;
+  margin-bottom: 5%;
+}
+.review-details {
+  width: 23rem;
+
+}
+.review-photo {
+  width: 2.75rem;
+}
+
+.review-photo-sm {
+  width: 1.56rem;
+}
+.review-photo-sm img {
+  width: 100%;
+}
+
+.review-title{
+    width:410px;
+   
+   
+    
+}
+.reviewScroll::-webkit-scrollbar{
+    height: 7px;
+}
+/* .scrollcontainer {
+    display: flex;
+   
+    width: 100px;
+    height: 60px;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+ */
+
+  .reviewScroll::-webkit-scrollbar-button {
+
+    background: transparent;
+
+    border-radius: 1px;
+
+  }
+
+  .reviewScroll::-webkit-scrollbar-track-piece {
+
+    background: transparent;
+
+  }
+
+  .reviewScroll::-webkit-scrollbar-thumb {
+
+    border-radius: 4px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    border: 1px solid slategrey;
+
+  }
+
+  .reviewScroll::-webkit-scrollbar-track {
+
+    box-shadow: transparent;
+
+  }
+ 
+.pageSwitch {
+  margin-left: 250px;
+}
+/* -suggest-product&browsing-history */
+.photogroup{
+    margin-bottom:23%;
+}
+.photoGroupTop{
+    width: 140px;margin-top:3%
+}
+/* -視差滾動 */
+.parallax-scrolling-bg {
+  width: 100%;
+  height: 43.75rem;
+  margin-right: 10%;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+.parallax-BGimg {
+  background-image: url(../../public/product/imgs/parallax.webp);
+}
+/* 推薦商品輪播圖 */
+
+/* ?cellphone */
+@media screen and (max-width: 414px) {
+  /* -font size */
+  
+  .text-10 {
+    font-size: 0.469rem;
+  }
+  .text-16 {
+    font-size: 0.75rem;
+  }
+  .text-20 {
+    font-size: 0.94rem;
+  }
+  .text-21 {
+    font-size: 0.98rem;
+  }
+  .text-30 {
+    font-size: 1.41rem;
+  }
+  .text-38 {
+    font-size: 1.78rem;
+    font-weight: 600;
+  }
+
+  .container-div {
+    width: 390px;
+    margin-top: 30px;
+  }
+
+  /* -前半段 */
+  /* -左側細節 */
+  .left-right {
+    flex-direction: column;
+  }
+  .xxs-none {
+    display: none;
+  }
+  .add-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  /* -照片小圖側欄 */
+  .side-photo {
+    display: flex;
+
+    margin-bottom: 0rem;
+    margin-right: 3%;
+  }
+  .side-photo-space {
+    width: 0rem;
+  }
+  .side-photo-total {
+    height: 3rem;
+    width: 19.5rem;
+ 
+  }
+
+  .scroll-container {
+    padding-left: 0.625rem;
+  }
+  .scroll {
+    width: 12.5rem;
+    height: 1rem;
+  }
+  /* -主商品圖 */
+  .pr-details-container {
+    width: 19.5rem;
+  }
+  /* -右側細節 */
+  .review-details {
+    width: 13rem;
+  }
+  .review-photo {
+    width: 2.75rem;
+  }
+  .review-photo img {
+    width: 100%;
+  }
+  .review-photo-sm {
+    width: 1.3rem;
+    height:1.5rem;
+  }
+  .review-photo-sm img {
+    width: 100%;
+  }
+  .review-scroll {
+    width: 1.875rem;
+    height: 0.3125rem;
+    background-color: black;
+  }
+  .review-endside {
+    width: 19rem;
+  }
+  .review-title{
+    width:380px
+  }
+  .review-font-size{
+    font-size:14px;
+  }
+.photogroup{
+    
+    margin-bottom:60%;
+}
+.photoGroupTop{
+    width: 140px;margin-top:15%
+}
+  /* -suggest-product&browsing-history */
+  
+  /* -視差滾動 */
+  .parallax-scrolling-bg {
+    height: 25.75rem;
+    margin-right: 10%;
+    /* background-attachment: fixed;
+    background-position: center right;
+    background-size: cover;
+    position: absolute; */
+    margin-bottom: 3rem;
+    color:#a1c4ad;
+  }
+  
+  .parallax-BGimg {
+    background-image: url(../../public/product/imgs/parallax-cell.webp);
+  }
+
+  .fixed-cus {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+background-color: #9eafa2;
+    height: 50px;
+  }
+}

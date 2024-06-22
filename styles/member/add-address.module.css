@@ -1,0 +1,306 @@
+/* aside {
+  display: none;
+}*/
+.topContainer{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 90px;
+  width:100%;
+  margin-bottom: 30px;
+}
+
+.mainAddAddress {
+  height:500px;
+  border: 3px solid #abc8bc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom:30px;
+} 
+
+
+.recipientAddress{
+  margin-bottom:20px;
+}
+
+
+
+.formAddAdress div:nth-child(1){
+  margin-left:20px;
+}
+
+.formAddAdress div:nth-child(2){
+  margin-left:20px
+}
+
+.formAddAdress div:nth-child(3){
+  margin-top: 15px;
+  margin-left:20px
+}
+
+
+
+.recipient-address {
+  font-size: 34px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-recipient-address{
+  display: flex;
+  justify-content: center;
+  font-size:14px;
+}
+
+
+
+.subTitle {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.labelAddAdress {
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+.textAddAdress{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.selectAddAddress{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+
+
+
+.phone {
+  width: 30%;
+  margin-right: 15px;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #00917c;
+  background: transparent;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+.form-control {
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  /* 设置输入框背景颜色为浅灰色 */
+}
+
+/* 将占位符颜色设置为黑色 */
+.textAddAdress::placeholder {
+  color: black;
+}
+
+.addAddress {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.addAddress div {
+  width: 33%;
+}
+
+.addAddress .liveAddress {
+  margin-top: 15px;
+  width: 33%;
+}
+
+/* footer {
+  margin-top: 20px;
+} */
+
+@media screen and (min-width: 768px) {
+  /* aside {
+    display: block;
+    margin-top: 90px;
+    width: 20%;
+  }*/
+  .topContainer{
+    width:75%;
+  }
+
+  .mainAddAddress {
+    height:420px;
+    width:80%;
+  } 
+
+  .recipientAddress{
+    margin-bottom:40px;
+  }
+
+  .formAddAdress div:nth-child(1){
+    margin-left:0px
+  }
+  
+  .formAddAdress div:nth-child(2){
+    margin-left:0px
+  }
+  
+  .formAddAdress div:nth-child(3){
+    margin-top:0px;
+    margin-left:0px
+  }
+  
+
+
+
+
+  .recipient-address {
+    font-size: 24px;
+    display: flex;
+    justify-content:flex-start;
+  }
+
+  .sub-recipient-address{
+    display: flex;
+    justify-content:flex-start;
+    font-size:16px;
+  }
+  
+  .subTitle {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+
+  /* 減少字型大小以適應較小螢幕 */
+  .form-control {
+    font-size: 14px;
+  }
+
+  .addAddress {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .addAddress .liveAddress {
+    margin-top: 0px;
+    width: 33%;
+  }
+  
+
+  .phone {
+    margin-top:15px;
+    width: 30%;
+  }
+
+  /* footer {
+    margin-top: 30px;
+  } */
+}

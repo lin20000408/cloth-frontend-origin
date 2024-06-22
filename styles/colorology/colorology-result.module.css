@@ -1,0 +1,411 @@
+.colorology-result :root {
+  --bg-color: #fbf3e8;
+  --primary: #abc8bc;
+  --primary-light: #00917c;
+}
+.colorology-result * {
+  margin: 0;
+  padding: 0;
+}
+
+/* 背景動畫 */
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #fbf3e8 20%, #4b6a70 80%);
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+.colorology-result main {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.colorology-result main h1 {
+  margin-bottom: 25px;
+}
+.colorology-result main ul,
+.colorology-result main ol {
+  list-style: none;
+  padding: 0;
+}
+.colorology-result main a {
+  text-decoration: none;
+  color: white;
+}
+.chromaticOutline {
+  /* 網站暖色 */
+  /* background-color: #fff9f2; */
+  /* 我的暖色 */
+  /* background-color:		#FFF0AC	; */
+
+  /* 網站冷色 */
+  /* background-color: #f2f6ff; */
+  /* 我的冷色 */
+  /* background-color:#D2E9FF; */
+
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
+}
+.diagnosticResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.colorology-result main p {
+  border-radius: 5px;
+}
+.judge {
+  border-radius: 5px;
+  background-color: #6b757dff;
+}
+.mobileModeColorGroups {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bodyText {
+  border-radius: 5px;
+  background-color: #6b757dff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.colorology-result main .basicColorText {
+  width: 140px;
+  border-radius: 20px;
+  background-color: #6b757dff;
+  margin-bottom: 10px;
+  padding: 2px 0;
+}
+.colorology-result main .brightColorText {
+  width: 90px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: #6b757dff;
+  margin-bottom: 10px;
+  padding: 2px 0;
+}
+.color1 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #fef6e1; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color2 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #c0c2c1; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color3 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #033b74; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color4 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #fac9bb; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color5 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #ee1b2c; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.lowerBody {
+  margin-top: 40px;
+}
+.color6 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #033b74; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color7 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #fef6e1; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color8 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #98542d; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color9 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #fec311; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.color10 {
+  width: 35px;
+  height: 35px;
+  /* background-color: #96d5cd; */
+  border-radius: 50px;
+  border: 1px solid black;
+}
+.otherModeColorGroups {
+  display: none;
+}
+.illustrate {
+  border-radius: 10px;
+  margin: 10px;
+  border: 2px solid #00917c;
+}
+.illustrate p {
+  margin-bottom: 0px;
+}
+.illustrate li::before {
+  content: '\2713'; /* 打勾符號 */
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.custom-btn {
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  margin-bottom: 30px;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover,
+.btn-7 a:hover {
+  color: #00917c;
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before,
+.btn-7 a:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after,
+.btn-7 a:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before,
+.btn-7 a:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after,
+.btn-7 a:hover:after {
+  width: 100%;
+}
+.btn-7 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .btn {
+  background-color: var(--primary-light);
+  transition: transform 0.3s ease;
+} */
+/* 滑鼠懸停時保持紫色 */
+/* .btn:hover {
+  background-color: var(--primary-light);
+  color: white;
+  transform: scale(1.1);
+} */
+/* 點擊時保持紫色 */
+/* .btn:active,
+.btn:focus {
+  background-color: var(--primary-light) !important;
+  color: white;
+} */
+
+/* 平板模式 */
+@media (min-width: 768px) {
+  .diagnosticResult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobileModeColorGroups {
+    display: none;
+  }
+  .otherModeColorGroups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .colorology-result main .basicColorText {
+    width: 135px;
+    margin-top: 20px;
+    margin-left: 65px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .colorology-result main .brightColorText {
+    width: 85px;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .bodyText {
+    width: 50px;
+  }
+  .illustrate {
+    width: 600px;
+    margin: 0 48px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .custom-btn {
+    margin-bottom: 0px;
+  }
+}
+
+/* 電腦模式 */
+@media screen and (min-width: 1024px) {
+}

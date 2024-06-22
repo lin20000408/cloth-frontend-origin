@@ -1,0 +1,90 @@
+[
+  {
+    "user_id": 1,
+    "coupon_id": 1,
+    "coupon_name": "2024年03月色彩學優惠劵",
+    "usage_status": "已使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 42,
+    "coupon_name": "2024年12月塔羅牌優惠劵",
+    "usage_status": "已使用",
+    "usage_time": "2024-03-23 18:36:00",
+    "send_time": "2024-03-19 14:59:26"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 69,
+    "coupon_name": "2024年07月免運劵",
+    "usage_status": "未使用",
+    "usage_time": "",
+    "send_time": "2024-03-21 10:00:53"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 21,
+    "coupon_name": "2024年03月色彩學優惠劵",
+    "usage_status": "未使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 19,
+    "coupon_name": "2024年03月生日禮",
+    "usage_status": "未使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 13,
+    "coupon_name": "2024年03月色彩學優惠劵",
+    "usage_status": "未使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 18,
+    "coupon_name": "2024年03月塔羅牌優惠劵",
+    "usage_status": "未使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 24,
+    "coupon_name": "2024年03月免運劵",
+    "usage_status": "未使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 28,
+    "coupon_name": "2024年03月色彩學優惠劵",
+    "usage_status": "已使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 11,
+    "coupon_name": "2024年03月色彩學優惠劵",
+    "usage_status": "已使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  },
+  {
+    "user_id": 1,
+    "coupon_id": 10,
+    "coupon_name": "2024年03月塔羅牌優惠劵",
+    "usage_status": "已使用",
+    "usage_time": "2024-03-24 17:13:47",
+    "send_time": "2024-03-20 22:14:42"
+  }
+]

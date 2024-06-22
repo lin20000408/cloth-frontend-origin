@@ -1,0 +1,305 @@
+.topContainer {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+}
+
+.accountAndPassword {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.email {
+  width: 100%;
+}
+
+.password {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.nameGenderBirthdate div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.name {
+  width: 35%;
+  margin-right: 15px;
+}
+
+.gender {
+  width: 19%;
+}
+
+.birthdate {
+  width: 60%;
+  margin-top: 15px;
+}
+
+.phone {
+  margin-top: 15px;
+}
+
+.phone div {
+  width: 45%;
+}
+
+.cityDistrictAddress {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.cityDistrict {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.city {
+  width: 48%;
+  margin-right: 15px;
+}
+
+.district {
+  width: 48%;
+}
+
+.address {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.labelForm {
+	height:20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.textRegister {
+  width: 100%;
+  border: 1px solid rgb(157, 145, 145);
+  border-radius: 5px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.emailRegister {
+  width: 100%;
+  border: 1px solid rgb(157, 145, 145);
+  border-radius: 5px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.passwordRegister {
+  width: 100%;
+  border: 1px solid rgb(157, 145, 145);
+  border-radius: 5px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.telRegister {
+  width: 100%;
+  border: 1px solid rgb(157, 145, 145);
+  border-radius: 5px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.selectRegister {
+  width: 100%;
+  border: 1px solid rgb(157, 145, 145);
+  border-radius: 5px;
+  height: 38px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+
+
+/* 調整出生年月日輸入框高度 */
+
+
+.form-control-1 {
+  border-radius:5px;
+  border: 1px solid rgb(157, 145, 145);
+  margin-top: 5px;
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.form-control-1:focus {
+  /* 获取焦点时的外边框颜色为浅橘色 */
+  box-shadow: 0 0 0 0.1rem #00917c;
+  /* 可选的获取焦点时阴影效果 */
+}
+
+
+.custom-btn {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #00917c;
+  background: transparent;
+  font-weight: bold;
+  /* transform: scale(1.1); */
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .topContainer {
+    max-width: 800px !important;
+  }
+
+  .accountAndPassword {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .email {
+    width: 50%;
+    margin-right: 30px;
+  }
+
+  .password {
+    width: 50%;
+    margin-top: 0px;
+  }
+
+  .name {
+    width: 32%;
+    margin-right: 15px;
+  }
+
+  .gender {
+    width: 32%;
+  }
+
+  .birthdate {
+    width: 32%;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .input-group1 {
+    margin-bottom: 15px;
+  }
+
+  .phone div {
+    width: 33%;
+  }
+
+  .cityDistrictAddress {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 15px;
+  }
+
+  .cityDistrict {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .city {
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .district {
+    width: 50%;
+    margin-right: 15px;
+  }
+
+  .address {
+    width: 50%;
+    margin-top: 0px;
+  }
+}

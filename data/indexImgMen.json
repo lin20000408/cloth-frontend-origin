@@ -1,0 +1,30 @@
+[
+    {
+        "img": "/main-card/男-H&M-印花休閒襯衫短袖-淺藍色-文青風-內3.webp",
+        "name":"印花休閒襯衫短袖",
+        "style":"文青風",
+        "price":799,
+        "href":"/product-list/210212"
+    },
+    {
+        "img": "/main-card/男-H&M-合身工裝短褲-淺米色-工裝風-內3.webp",
+        "name":"合身工裝短褲",
+        "style":"工裝風",
+        "price":799,
+        "href":"/product-list/230112"
+    },
+    {
+        "img": "/main-card/男-H&M-寬鬆剪裁拉鍊連帽長袖外套-深灰色-休閒風-1.webp",
+        "name":"寬鬆剪裁拉鍊連帽長袖外套",
+        "style":"休閒風",
+        "price":699,
+        "href":"/product-list/290312"
+    },
+    {
+        "img": "/main-card/男-H&M-寬鬆剪裁短袖亞麻混紡襯衫短袖-米色-工裝風-內5.webp",
+        "name":"寬鬆剪裁短袖亞麻混紡襯衫短袖",
+        "style":"工裝風",
+        "price":699,
+        "href":"/product-list/210112"
+    }
+]

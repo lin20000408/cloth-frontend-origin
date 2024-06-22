@@ -1,0 +1,70 @@
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px; /* remove the gap so it doesn't close */
+}
+
+.linkBg :hover {
+  background-color: #ABC8BC;
+  color: white;
+}
+
+.linkBtn {
+  border: none;
+  background-color: white;
+}
+
+.linkClick {
+  background-color: #ABC8BC;
+  color: white;
+  padding: 5px 10px;
+}
+
+.custom-active {
+  font-weight: 500;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+.slideIn {
+  animation-name: slideIn;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+@keyframes bufferAnimation {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.label-link:hover {
+  animation: bufferAnimation 0.7s ease-out forwards;
+}
+
+.label-link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 992px) {
+  .slideIn {
+    animation: none !important;
+  }
+}/*# sourceMappingURL=menubar.module.css.map */

@@ -1,0 +1,168 @@
+.coupon :root {
+  --bg-color: #fbf3e8;
+  --coupon: #bda887;
+  --primary: #abc8bc;
+  --primary-light: #00917c;
+}
+.coupon * {
+  margin: 0;
+  padding: 0;
+}
+.coupon {
+  width: 100%;
+  height: 100%;
+}
+.coupon main{
+  width: 100%;
+  height: 100%;
+}
+.outerFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid;
+  border-radius: 10px;
+  margin: 100px 0;
+  border-color: #abc8bc;
+}
+.use {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #abc8bc;
+}
+.use button {
+  background-color: #abc8bc;
+  border: 0;
+}
+.use h2 {
+  width: 137px;
+  height: 46px;
+  margin-bottom: 0;
+  font-weight: bold;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.unused {
+  color: #00917c;
+}
+.used {
+  color: white;
+}
+.use .dottedLine {
+  height: 100%;
+  border-left: 3px dashed white;
+}
+.menu {
+  width: 50%;
+  margin-top: 30px;
+  /* color: #00917c;
+  border-color: #00917c;
+  background-color: #fbf3e8; */
+}
+.coupons {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.couponCard {
+  width: 200px;
+  height: 395px;
+  position: relative;
+  top: 70px;
+  z-index: 2;
+}
+.smallIcon {
+  width: 150px;
+  position: relative;
+  left: 65px;
+  bottom: 10px;
+  transform: rotate(15deg);
+}
+
+/* 手機XR模式 */
+@media (min-width: 414px) {
+  .smallIcon {
+    left: 115px;
+    bottom: 5px;
+  }
+  .use h2 {
+    width: 185px;
+    height: 46px;
+  }
+}
+
+/* 平板模式 */
+@media (min-width: 768px) {
+  .coupon {
+    width: 75%;
+    margin-top: 90px;
+  }
+  .outerFrame {
+    margin-top: 0;
+  }
+  .use h2 {
+    width: 250px;
+    height: 46px;
+  }
+  .menu {
+    width: 30%;
+  }
+  .coupons {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .couponCard {
+    margin: 0 20px;
+  }
+  .smallIcon {
+    left: 190px;
+    bottom: 0px;
+  }
+}
+
+/* 電腦模式 */
+@media screen and (min-width: 1024px) {
+  .smallIcon {
+    left: 360px;
+    bottom: 20px;
+    background: #ffffff;
+  }
+  .use h2 {
+    width: 340px;
+    height: 46px;
+  }
+}
+
+/* 電腦1200px模式 */
+@media screen and (min-width: 1200px) {
+  .smallIcon {
+    left: 420px;
+    bottom: 20px;
+  }
+  .use h2 {
+    width: 405px;
+    height: 46px;
+  }
+}
+
+/* 電腦1400px模式 */
+@media screen and (min-width: 1400px) {
+  .smallIcon {
+    left: 495px;
+    bottom: 20px;
+  }
+  .use h2 {
+    width: 475px;
+    height: 46px;
+  }
+  .coupons {
+    justify-content: start;
+  }
+}

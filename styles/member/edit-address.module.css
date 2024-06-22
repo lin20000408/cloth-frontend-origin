@@ -1,0 +1,168 @@
+.topContainer{
+	width:100%;
+	margin-bottom:30px
+}
+.subContainer {
+  width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+}
+
+.main{
+  height:100px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.subTitle {
+  font-size: 14px;
+}
+
+.addAddressButton {
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 30px; /* 调整按钮的宽度和高度以确保图标有足够的空间 */
+  height: 30px;
+  right: 0;
+  border-radius: 50%; /* 使用百分比定义圆角 */
+  background-color: #abc8bc; /* 设置背景颜色为深绿色 */
+  color: #ffffff; /* 设置文字颜色为白色 */
+  display: flex; /* 使用 flexbox 布局 */
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: #abc8bc;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #abc8bc;
+  background: transparent;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: #abc8bc;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+.editAddress p {
+  margin-right: 30px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.editAddress p:nth-child(1) {
+  font-weight: 600;
+}
+
+.editAddress p:nth-child(2) {
+  font-weight: 600;
+}
+
+.editAddress p:nth-child(3) {
+  font-size: 15px;
+}
+
+.editAddress p a {
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  /* 調整標題文字大小和間距 */
+
+	.topContainer{
+		width:70%
+	}
+
+  .editAddressTitle {
+    font-size: 22px;
+  }
+
+  .editAddressTitle span {
+    font-size: 18px;
+  }
+}

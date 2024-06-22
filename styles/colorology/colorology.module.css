@@ -1,0 +1,457 @@
+.colorology :root {
+  --bg-color: #fbf3e8;
+  --primary: #abc8bc;
+  --primary-light: #00917c;
+}
+.colorology * {
+  margin: 0;
+  padding: 0;
+}
+/* 初始狀態：部分顯示內容 */
+/* .colorology {
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+} */
+/* 定義逐步顯示的動畫 */
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+/* 背景動畫 */
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -1px;
+  background-image: linear-gradient(to top, #fbf3e8 20%, #4b6a70 80%);
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
+}
+
+.colorology main {
+  margin-top: 70px;
+}
+.colorology main h1 {
+  font-weight: bold;
+  z-index: 99;
+  margin-bottom: 25px;
+}
+.colorology main h1,
+.colorology main h2,
+.colorology main h3,
+.colorology main h5 {
+  margin-bottom: 0;
+}
+.colorology h3 {
+  text-align: center;
+}
+
+.popup {
+  box-sizing: border-box;
+  z-index: 25;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 30px;
+  height: 60svh;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 50px;
+  margin-top: 50px;
+  padding-top: 35px;
+}
+/* 設定單選按鈕的預設邊框樣式 */
+.form-check-input {
+  border: 1px solid #00917c;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+}
+/* 修改單選按鈕的選中狀態下的顏色為紅色 */
+.form-check-input:checked {
+  background-color: #00917c;
+  border-color: #00917c;
+}
+/* 修改單選按鈕的焦點邊框顏色 */
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(171, 200, 188, 0.25);
+  border-color: #abc8bc;
+}
+.popup__content {
+  display: none;
+  flex-direction: column;
+}
+.question-visible {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 350px;
+}
+.popup_visible {
+  opacity: 1;
+  visibility: visible;
+  top: 50%;
+}
+.popup__button {
+  margin: 8px auto 0;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  outline-color: transparent;
+  border: none;
+  background-color: #00917c;
+  color: #fff;
+  width: 176px;
+  height: 40px;
+  cursor: pointer;
+}
+.popup__button:disabled {
+  margin: 8px auto 0;
+  padding: 8px 0;
+  border-radius: 8px;
+  font-weight: 500;
+  outline-color: transparent;
+  border: none;
+  background-color: #dfdfdf;
+  color: #fff;
+  width: 176px;
+  height: 40px;
+}
+.popup__progress {
+  display: none;
+}
+.quiz {
+  display: flex;
+  flex-direction: column;
+}
+.quiz__answers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.previousQuestion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.previousQuestion-icon {
+  margin-bottom: 24px;
+}
+
+.modal-body {
+  height: 258.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover,
+.btn-7 a:hover {
+  color: #00917c;
+  background: transparent;
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before,
+.btn-7 a:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after,
+.btn-7 a:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before,
+.btn-7 a:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after,
+.btn-7 a:hover:after {
+  width: 100%;
+}
+.btn-7 a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-11 {
+  overflow: hidden;
+  /* 添加右邊框線 */
+  border-right: 2px solid transparent;
+}
+.btn-11:before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+/* 添加按鈕懸停時的邊框顏色 */
+.btn-11:hover {
+  border-right-color: #00917c;
+}
+.custom-btn.btn-11:hover:before {
+  /* 滑鼠懸停時的邊框閃爍效果 */
+  animation: none; /* 禁用動畫 */
+}
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  61% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/* .btn {
+  background-color: var(--primary-light);
+  color: white;
+  transition: transform 0.3s ease;
+} */
+/* 滑鼠懸停時保持綠色 */
+/* .btn:hover {
+  background-color: var(--primary-light);
+  color: white;
+  transform: scale(1.1);
+} */
+/* 點擊時保持綠色 */
+/* .btn:active,
+.btn:focus {
+  background-color: var(--primary-light) !important;
+  color: white;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+} */
+
+/* 手機XR模式 */
+@media screen and (min-width: 414px) {
+  .colorology h3 {
+    min-width: 284px;
+  }
+  .popup {
+    height: 55svh;
+    padding-top: 45px;
+  }
+
+  .modal-body h5 {
+    font-size: 24px;
+  }
+}
+
+/* 平板模式 */
+@media (min-width: 768px) {
+  .colorology h3 {
+    text-align: start;
+  }
+  .popup {
+    box-sizing: border-box;
+    z-index: 25;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.12), 0 5px 2px rgba(0, 0, 0, 0.24);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    border-radius: 30px;
+    height: 55svh;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 50px;
+    margin-top: 50px;
+    padding-top: 0px;
+  }
+  .popup {
+    width: 695px;
+  }
+  .popup__progress {
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .popup__progress-line {
+    height: 2px;
+    width: 48px;
+    background-color: #00917c;
+  }
+  .popup__progress-item {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 2px solid #00917c;
+    color: #d20f26;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .popup__progress-item_active {
+    background-color: #00917c;
+    color: #fff;
+  }
+  .question-visible {
+    justify-content: space-between;
+  }
+  .previousQuestion {
+    display: flex;
+    flex-direction: row;
+  }
+  .previousQuestion-icon {
+    margin-right: 10px;
+  }
+}

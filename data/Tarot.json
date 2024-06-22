@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "img": "/images/tarot/力量.png",
+    "text1": "力量（Strength）：力量代表著勇氣、耐心和內在力量。一個女性輕柔地控制著一頭獅子，象徵著她通過溫柔和耐心來控制自己的本性。力量提醒我們要以柔克剛，以愛化解恐懼，並展現出內在的勇氣和堅韌。",
+    "text2": "在服飾中，可以選擇表現力強、自信的款式，例如緊身衣或露肩上衣。",
+    "products_id_1": "1",
+    "products_name_1": "緊身衣",
+    "product_photos_id_1": "1",
+    "product_photos_img_1": "/images/tarot/d7f1fa725f5a5f29ceac7e8a88c3e075 2.png",
+    "products_id_2": "3",
+    "products_name_2": "露肩上衣",
+    "product_photos_id_2": "3",
+    "product_photos_img_2": "/images/tarot/800x 2.png"
+  },
+  {
+    "id": 2,
+    "img": "/images/tarot/力量.png",
+    "text1": "愚者（The Fool）：愚者象徵著新的開始、無畏和冒險精神。他代表著一個人踏上旅程，充滿了信心和好奇心，但同時也缺乏經驗和成熟。在塔羅牌中，愚者通常是一個年輕人，背著行囊，沐浴在陽光下，無憂無慮地向前走。",
+    "text2": "在服飾穿搭中，可能意味著選擇輕鬆、自在的風格，例如休閒裝或是流行的街頭風格。",
+    "products_id_1": "24",
+    "products_name_1": "休閒裝",
+    "product_photos_id_1": "24",
+    "product_photos_img_1": "/images/tarot/力量.png",
+    "products_id_2": "33",
+    "products_name_2": "街頭裝",
+    "product_photos_id_2": "33",
+    "product_photos_img_2": "/images/tarot/力量.png"
+  },
+  {
+    "id": 3,
+    "img": "/images/tarot/力量.png",
+    "text1": "魔術師（The Magician）：魔術師代表著意志力、創造力和潛力。他站在一張桌子前，手持魔杖指向天空，另一隻手指向地面，象徵著將精神力量轉化為現實的能力。魔術師提醒我們，我們擁有塑造自己命運的力量，只要我們相信自己並努力去實現目標。",
+    "text2": "在服飾中，可以體現為選擇富有創意和個性化的服裝，展示自己獨特的風格。",
+    "products_id_1": "15",
+    "products_name_1": "創意裝",
+    "product_photos_id_1": "15",
+    "product_photos_img_1": "/images/tarot/d7f1fa725f5a5f29ceac7e8a88c3e075 2.png",
+    "products_id_2": "25",
+    "products_name_2": "個性化裝",
+    "product_photos_id_2": "25",
+    "product_photos_img_2": "/images/tarot/800x 2.png"
+  }
+]

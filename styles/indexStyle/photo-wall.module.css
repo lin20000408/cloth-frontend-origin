@@ -1,0 +1,46 @@
+.photo-wall-container {
+  overflow: hidden;
+  width: 552%;
+}
+
+.photo-wall {
+  display: flex;
+}
+
+.photo-set {
+  display: flex;
+  flex-direction: row;
+}
+.small-photo {
+  width: 196px;
+  border-radius: 20px 20px 0px 20px;
+}
+.big-photo {
+  width: 400px;
+  height: 500px;
+  border-radius: 20px  20px 0px 20px;
+}
+
+/* 平板模式 */
+@media (min-width: 768px) {
+  .photo-wall-container {
+    overflow: hidden;
+    width: 235%;
+  }
+}
+
+/* 電腦1024px模式 */
+@media (min-width: 1024px) {
+  .photo-wall-container {
+    overflow: hidden;
+    width: 175%;
+  }
+}
+
+/* 電腦模式 */
+@media (min-width: 1440px) {
+  .photo-wall-container {
+    overflow: hidden;
+    width: 143%;
+  }
+}

@@ -1,0 +1,113 @@
+.sidebarMain * {
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebarMain {
+  width: 100%;
+}
+
+.sidebarMain ul,
+.sidebarMain li,
+.sidebarMain a {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+.sidebarMain p {
+  list-style-type: none;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.secondarySidebar {
+  display: none;
+}
+
+.leftSidebar {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.sidebar div {
+  display: flex;
+  height: 80px;
+}
+
+.bigHead {
+  display: block;
+  background-color: rgb(217, 238, 79);
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.centerLink {
+  display: flex !important;
+  justify-content: center;
+}
+
+.phoneMyAccount {
+  cursor: pointer;
+  width: 100%; /* 这里需要指定一个值 */
+  margin-top: 10px;
+  border: none;
+  font-weight: 600;
+  font-size: 25px;
+  background-color: transparent;
+}
+
+.phoneMyOrder {
+  margin-top:10px;
+  cursor: pointer;
+  width: 100%; /* 这里需要指定一个值 */
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.phoneForMember {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%; /* 这里需要指定一个值 */
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  background-color: transparent;
+}
+
+.myOrder li,
+.myAccount li,
+.onlyForMember li {
+  margin-top:10px;
+  font-size:20px ;
+  width: 100%;
+}
+
+.myOrder p:hover,
+.myAccount p:hover,
+.onlyForMember p:hover {
+  width: 100%;
+}
+
+.sidebar a:hover {
+  font-weight: 600;
+}

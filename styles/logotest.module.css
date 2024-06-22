@@ -1,0 +1,66 @@
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+
+
+/* 操控順序反過來D是第6個 P是第一個 */
+.logo path:nth-child(1) {
+  stroke-dasharray: 588.5768432617188px;
+  stroke-dashoffset:588.5768432617188px;
+  animation: logo-intro 1.4s ease-in-out forwards 3.5s ,fill 0.5s linear forwards 4.4s, fillBack 1.5s linear forwards 5.5s ;
+}
+.logo path:nth-child(2) {
+  stroke-dasharray: 703.5337524414062px;
+    stroke-dashoffset: 703.5337524414062px;
+    animation: logo-intro 1.4s ease-in-out forwards 3.2s ,fill 0.5s linear forwards 4s, fillBack 1.5s linear forwards 5.5s ;
+}
+.logo path:nth-child(3) {
+  stroke-dasharray: 753.6015625px;
+    stroke-dashoffset: 753.6015625px;
+    animation: logo-intro 1.4s ease-in-out forwards 2.9s ,fill 0.5s linear forwards 3.6s, fillBack 1.5s linear forwards 5.5s ;
+}
+.logo path:nth-child(4) {
+  stroke-dasharray: 677.587158203125px;
+    stroke-dashoffset: 677.587158203125px;
+    animation: logo-intro 1.4s ease-in-out forwards 2.6s ,fill 0.5s linear forwards 3.2s, fillBack 1.5s linear forwards 5.5s ;
+}
+.logo path:nth-child(5) {
+  stroke-dasharray: 720.1287231445312px;
+    stroke-dashoffset: 720.1287231445312px;
+    animation:logo-intro 1.4s ease-in-out forwards 2.3s ,fill 0.5s linear forwards 2.8s, fillBack 1.5s linear forwards 5.5s ;
+}
+.logo path:nth-child(6) {
+  stroke-dasharray: 720.1281127929688px;
+    stroke-dashoffset: 720.1281127929688px;
+    animation:logo-intro 1.4s ease-in-out forwards 2s ,fill 0.5s linear forwards 2.4s, fillBack 1.5s linear forwards 5.5s ;
+}
+
+@keyframes logo-intro{
+  to {
+    stroke-dashoffset: 0%;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill:transparent;
+  }
+  to{
+    fill: white;
+  }
+}
+
+@keyframes fillBack {
+  from {
+    fill:white;
+  }
+  to{
+     fill: transparent
+  }
+}

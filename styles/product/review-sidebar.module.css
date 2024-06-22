@@ -1,0 +1,183 @@
+.sidebarMain * {
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+   
+  }
+  .sidebarMain {
+    width: 100%;
+    margin-top: -8%;
+  }
+  .sidebarMain ul,
+  .sidebarMain li,
+  .sidebarMain a {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+  }
+  
+  .leftSidebar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  /* 點到該頁面會呈現特定顏色 #00917c*/
+  .activeLink {
+    color: #00917c !important;
+    font-weight: 600;
+  }
+  
+  .inactiveLink {
+    color: rgb(12, 12, 12);
+  }
+  
+  
+  .sidebar {
+    width: 100px;
+  }
+  
+  .sidebar p {
+    margin-top:15px;
+    font-size: 22px !important;
+    font-weight: 600;
+  }
+  
+  .sidebar div {
+    display: flex;
+    height: 80px;
+  }
+  
+  .bigHead {
+    display: block;
+ 
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .myOrder p:hover,
+  .myAccount p:hover,
+  .onlyForMember p:hover {
+    width: 100%;
+  }
+  
+  .sidebarMain {
+    display: block;
+  
+  }
+  
+  .sidebarMain * {
+    display: block;
+  }
+  
+  .leftSidebar {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .sidebar {
+    width: 150px;
+  }
+  
+  .sidebar p {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .sidebar a {
+    color: black;
+  }
+  
+  .sidebar a:hover {
+    font-weight: 600;
+    color: #00917c !important;
+  }
+  
+  .sidebar li {
+    color: black;
+    /* margin-bottom: 10px; */
+  }
+  
+  .sidebar div {
+    height: 80px;
+    margin-left: 5px;
+  }
+  
+  .sidebar img {
+    margin-top:15px;
+    display: block;
+    
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    object-fit: center;
+  }
+  
+  .myOrder p:hover,
+  .myAccount p:hover,
+  .onlyForMember p:hover {
+    width: auto;
+    background-color: transparent;
+  }
+  
+  
+  
+  
+  .myAccount li {
+    margin-top:15px !important;
+    font-size:18px;
+    width: 100%;
+    display: block;
+  }
+  
+  .myOrder li {
+    margin-top:15px !important;
+    font-size:18px;
+    display: block;
+  }
+  
+  .onlyForMember li {
+    margin-top:15px !important;
+    font-size:18px;
+    display: block;
+  }
+  
+  /* sub-secondary */
+  .secondarySidebar {
+    display: flex;
+    font-size: 13px;
+    margin-top: 90px;
+  }
+  
+  .secondarySidebar div:nth-child(1) {
+    font-weight: 600;
+  }
+  
+  .secondarySidebar a:nth-child(1) {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .secondarySidebar div:nth-child(2) {
+    font-weight: 600;
+  }
+  
+  .secondarySidebar div:nth-child(3) {
+    color: rgb(131, 128, 128);
+  }
+  
+  @media screen and (min-width: 1024px) {
+    /* sub-secondary */
+    .secondarySidebar {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .sidebarMain {
+      display: none;
+    }
+  }

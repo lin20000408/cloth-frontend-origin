@@ -1,0 +1,87 @@
+.topContainer {
+
+	width:100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.getAddress {
+  border-radius: 5px;
+  padding:20px;
+  /* border:1px solid #abc8bc; */
+  margin-bottom: 40px;
+}
+
+.getAddressTitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.subAddressTitle {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recipientAddress {
+  position: relative;
+  width: 100%;
+}
+
+.sendAddress {
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+.addAddressButton {
+  border: none;
+  outline: none;
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+  position: absolute;
+  right: 0;
+}
+
+.topContainer main {
+  width: 90%;
+  margin: 90px 0;
+}
+
+.addAddress{
+	width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+/* 将占位符颜色设置为黑色 */
+.addAddress::placeholder {
+  color: black;
+}
+
+.icon-hover:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+
+  .topContainer {
+    width:75%;
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+  }
+
+
+}
+
+
+

@@ -1,0 +1,332 @@
+.topcard {
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 396px;
+  height: 688px;
+}
+.ranking {
+  width: 58px;
+  height: 58px;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: white;
+}
+.ranking p{
+  font-size: 14px;
+   position: absolute;
+  top: 7px;
+  right: 17px;
+}
+.ranking span {
+  font-size: 20px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
+  font-weight: 900;
+}
+.bottomcard {
+  border-radius: 20px;
+  margin-top: 10px;
+  width: 396px;
+  height: 688px;
+  /* position: "static"; */
+}
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 71%;
+  border-radius: 20px 20px 0 0;
+}
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+}
+.hot-text {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  margin: 10px 0 0 0;
+}
+.hotcard-body {
+  margin-top: -70px;
+  padding: 0;
+  gap: 45px;
+  height: 250px;
+}
+.pr-midden {
+  width: 100%;
+  height: 240px;
+}
+.pr-min-img {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* background-color: antiquewhite; */
+}
+.pr-min-img img {
+  border-radius: 50%;
+}
+
+.pr-min-text h2 {
+  margin: 0;
+}
+.more-block {
+  width: 100%;
+  height: auto;
+  gap: 215px;
+  align-self: stretch;
+}
+.name-max {
+  position: absolute;
+  font-size: 15px;
+  font-weight: 700;
+}
+/* 藝術字 */
+.description1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  position: relative;
+  top: -80px;
+  left: -25px;
+}
+.description2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.1px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  position: relative;
+  top: -80px;
+  left: -25px;
+}
+.name-min {
+  position: relative;
+  top: 20px;
+}
+.more-block p {
+  margin: 0;
+}
+.small-name-max {
+  position: relative;
+  left: 30px;
+}
+.small-name-min {
+  position: relative;
+  left: 30px;
+}
+.description3 {
+  padding: 0;
+   position: relative;
+   left:30px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.pr-more-bt-max {
+  height: 2rem;
+  position: relative;
+  left: 180px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: 0px;
+  background-color: white;
+  border-radius: 14px;
+}
+.pr-more-bt-max::after {
+  content: 'MORE>>';
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  letter-spacing: 0;
+}
+/* 藝術字 */
+.description4 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  position: relative;
+  top: -80px;
+  left: -25px;
+}
+.description5 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.1px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  position: relative;
+  top: -80px;
+  left: -25px;
+}
+.description6 {
+  padding: 0;
+   position: relative;
+   left:30px;
+   width:150px;
+   display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+}
+.pr-more-bt-min {
+  height: 2rem;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: 0px;
+  left:150px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.pr-more-bt-min::after {
+  content: 'MORE>>';
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  letter-spacing: 0;
+}
+@media (min-width: 1440px) {
+  .ranking {
+  width: 66px;
+  height: 66px;
+}
+.ranking p{
+  font-size: 14px;
+   position: absolute;
+  top: 8px;
+  right: 20px;
+}
+.ranking span {
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  font-weight: 900;
+}
+/* 藝術字 */
+.description1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  position: relative;
+  top: -10px;
+  left: -25px;
+}
+.description2 {
+  font-size: 60px;
+  position: relative;
+  top: -10px;
+  left: -25px;
+}
+  .topcard {
+    /* border-radius: 20px;
+        margin-top: 10px; */
+    width: 626px;
+    height: 833px;
+  }
+  .hotcard-body {
+    margin-top: -60px;
+    height: 220px;
+  }
+  .name-max {
+    position: relative;
+  }
+  .description3 {
+  padding: 0;
+   position: relative;
+   left:55px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.pr-more-bt-max {
+  height: 2rem;
+  position: relative;
+  left: 180px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: 0px;
+  left:350px;
+  background-color: white;
+  border-radius: 14px;
+}
+.pr-more-bt-max::after {
+  content: 'MORE>>';
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.pr-more-bt-max:hover {
+  background-color: black;
+  }
+  .pr-more-bt-max:hover::after {
+    color: white;
+  }
+/* 藝術字 */
+.description4 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  position: relative;
+  top: -30px;
+  left: -25px;
+}
+.description5 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1.1px;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1;
+  position: relative;
+  top: -30px;
+  left: -25px;
+}
+
+
+.description6 {
+   top:-20px;
+}
+.pr-more-bt-min {
+  height: 2rem;
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  top: -20px;
+  left:150px;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.pr-more-bt-min::after {
+  content: 'MORE>>';
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+.pr-more-bt-min:hover {
+background-color: black;
+}
+.pr-more-bt-min:hover::after {
+  color: white;
+}
+
+}

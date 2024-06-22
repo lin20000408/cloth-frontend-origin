@@ -1,0 +1,35 @@
+.recommended-color{
+    position: relative;
+    display: inline-block;
+    
+}
+.recommended-color-img{
+    width: 100%;
+    position: absolute;
+    bottom: 110%;
+    left: -33%; 
+}
+.recommended-img{
+    width: 50px;
+}
+.recommended-size{
+    position: relative;
+    display: inline-block;
+}
+.recommended-size-img{
+    width: 100%;
+    position: absolute;
+    bottom: 110%;
+    left: -18%; 
+}
+.addgroup{
+    width: 50%;
+}
+@media (max-width: 768px) {
+    .pgroup{
+        margin-top: 20px;
+    }
+    .addgroup{
+        width: 62%;
+    }
+  }

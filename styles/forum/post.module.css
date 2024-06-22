@@ -1,0 +1,50 @@
+.container {
+  padding-top: 70px;
+}
+
+.post {
+  display: flex;
+}
+
+.post-left {
+  margin-right: 60px;
+}
+
+.post-left .photo-main {
+  width: 600px;
+  height: 600px;
+}
+
+.thumb-link-img {
+  width: 200px;
+  height: 200px;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+
+/* 手機XR模式 */
+@media (min-width: 414px) {
+  .post {
+    flex-direction: column;
+  }
+  
+  .photo-main {
+    max-width: 414px;
+  }
+}
+
+/* 電腦模式 */
+@media screen and (min-width: 1024px) {
+  .post {
+    flex-direction: row;
+  }
+  
+  .photo-main {
+    width: 600px;
+  }
+}

@@ -1,0 +1,140 @@
+/* -font size */
+.text-10 {
+  font-size: 0.625rem;
+}
+.text-16 {
+  font-size: 1rem;
+}
+.text-20 {
+  font-size: 1.25rem;
+}
+.text-21 {
+  font-size: 1.3125rem;
+}
+.text-30 {
+  font-size: 1.875rem;
+}
+.text-38 {
+  font-size: 2.375rem;
+  font-weight: 600;
+}
+
+/*?computer */
+
+.direction {
+
+margin-left: 8vw;
+margin-right: 15vw;
+width:100%;
+}
+
+
+
+.pr-comment-photo {
+  width: 4rem;
+}
+
+/* comment */
+.el-tag {
+    margin-right: 10px;
+    cursor: pointer;
+  } 
+   /* div {
+    text-indent: 0em;
+  }  */
+  .comp-box {
+    box-sizing: border-box;
+    border: 1px solid #dedede;
+    background-color: #fafbfc;
+    width: 100%;
+    /* // width: 500px; */
+    padding: 10px;
+  }
+  /* // 标签盒子 */
+  .tag-box {
+    width: 100%;
+  }
+  /* // 内容 */
+  .content {
+    width: 100%;
+    border: 1px solid #dedede;
+    margin-top: 10px;
+    background-color: #fefefe;
+    min-height: 110px;
+    padding: 5px 0px;
+    /* // 标签项 */
+    .tag-item-content {
+      font-size: 12px;
+      color: #666666;
+      position: relative;
+      line-height: 22px;
+      .label {
+        color: #999;
+        font-size: inherit;
+        position: absolute;
+        top: 0px;
+        padding-left: 5px;
+      }
+      .cont {
+        outline: none;
+        border: none;
+        box-sizing: border-box;
+        padding: 0px 5px;
+        /* // 只显示文本, 不自动生成标签 */
+        -webkit-user-modify: read-write-plaintext-only;
+      }
+    }
+  }
+  .tag-input-area {
+    text-indent: 3em;
+  }
+  
+  .btn-box {
+    margin-top: 5px;
+    text-align: right;
+  }
+  .tag-item-content-label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #999;
+  }
+  .photo-width{
+    width:100px;
+  }
+  .upload-width{
+    width: 300px;
+  }
+  /* comment */
+/*?cell */
+@media screen and (max-width: 414px) {
+    .direction {
+        margin-left: 0;
+      
+margin-right: 0;
+        width:100%;
+        position: static;
+    }
+  .text-30 {
+    font-size: 1.5rem;
+  }
+  .xxs-none {
+    display: none;
+  }
+  .review-select {
+    margin-right: 0;
+  }
+
+  .pr-comment-photo {
+    width: 14rem;
+  }
+  .cell-pr {
+    align-items: center;
+    margin-top: 2%;
+  }
+ 
+  .comp-box {width:350px;}
+}
+.upload-width{
+    width: 270px;
+  }

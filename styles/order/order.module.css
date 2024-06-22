@@ -1,0 +1,442 @@
+.title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 50px;
+  border-bottom: 3px solid black;
+  width: 120px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.title p {
+  margin:0
+}
+.order-session {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+.payment-btn {
+  font-size: 14px;
+  border-radius: 0%;
+  padding: 0;
+  height: 35px;
+  margin: 10px auto;
+  display: block;
+  width: 95%;
+}
+
+.product-info {
+  display: flex;
+  gap: 22px;
+}
+
+.product-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.product-name p {
+  margin:0
+}
+
+#Product-count {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.productRow-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.cart-session4 {
+  margin-bottom: 150px;
+}
+
+.fav-products {
+  display: flex;
+  gap: 20px;
+}
+
+.favlist-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* order */
+.part-left {
+  width: 60%;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.order-products {
+  width: 100%;
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  padding: 30px 10px 20px 10px;
+}
+
+.changeBtn {
+  text-align: right;
+}
+
+
+.keep-buying {
+  border-radius: 0;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 3px solid black;
+}
+
+.user,
+.payment-method,
+.receive-method,
+.coupon,
+.receiver {
+  width: 100%;
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  padding: 30px 10px;
+}
+
+
+.user-title {
+  border-bottom: 1px solid;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+
+
+.user ul,
+.receiver ul
+ {
+  padding:0;
+  list-style: none;
+}
+
+.user li,
+.receiver li {
+   margin-bottom: 10px;
+}
+
+.receiver-title,
+.coupon-title,
+.receive-title,
+.payment-title {
+  border-bottom: 1px solid;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.select-coupon {
+  display: flex;
+  padding: 10px 10px;
+  height: 65px;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.select-coupon p {
+  margin:0
+}
+
+.select-coupon-option {
+  width: 70%;
+  height: 100%;
+}
+
+.part-right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* height: 350px; */
+
+}
+
+.order-total {
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  padding: 20px 10px 30px 10px;
+}
+.order-total ul{
+  list-style: none;
+  margin:0
+}
+
+.order-total-count {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid;
+  padding: 15px 10px;
+}
+
+.order-total-count:nth-of-type(4) {
+  border-bottom: 1px solid;
+}
+
+.custom-btn {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: "Lato", sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.custom-btn a {
+  text-decoration: none;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-7:hover {
+  color: #00917c;
+  background: transparent;
+  font-weight: bold;
+}
+
+.btn-7:hover:before {
+  height: 100%;
+}
+
+.btn-7:hover:after {
+  width: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2),
+    4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+
+.btn-7 span:hover:before {
+  height: 100%;
+}
+
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+
+
+
+
+/* 手機板 */
+@media (max-width: 768px) {
+  .order-session {
+    flex-direction: column;
+    margin: 50px 0 5px 0;
+  }
+
+  .part-left {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+
+  /* 控制所有商品資訊 */
+  .products-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 控制所有商品底下的每個tr */
+  .products-info>tr {
+    grid-template-columns: 1fr 40%;
+    display: grid;
+    width: 100%;
+  }
+
+  /* 單一產品的圖跟價錢 名稱 */
+  .product-info {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+
+  .products-info::before {
+    content: '訂單內容';
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+
+  /* 控制所有商品底下的每個tr的td  */
+  .products-info>tr>th:nth-child(1) {
+    border: none;
+  }
+
+  /* input按鈕父層 */
+  .products-info>tr>td:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+    border-radius: 0;
+    width: 100%;
+    margin: 0;
+  }
+
+  .products-info>tr>td:nth-child(2)::before {
+    content: "數量";
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* input按鈕本人 */
+  .Product-count {
+    width: 60px;
+    margin: 0;
+  }
+
+  /* 刪除+稍後購買 */
+  .products-info>tr>td:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    display: none;
+    justify-content: space-around;
+    border: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* 單價 */
+  .products-info>tr>td:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    margin: 0;
+  }
+
+  .products-info>tr>td:nth-child(3)::before {
+    content: "單價";
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  /* 總價 */
+  .products-info>tr>td:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    margin: 0;
+  }
+
+  .products-info>tr>td:nth-child(4)::before {
+    content: "總價";
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .part-right {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0px;
+  }
+
+  .form-control:focus {
+    border-color: #fff;
+    box-shadow: 1px 1px 5px #aabec3;
+  }
+
+  .order-session {
+    margin-bottom: 30px;
+  }
+
+  .order-total {
+    padding: 20px 10px 20px 10px;
+  }
+}

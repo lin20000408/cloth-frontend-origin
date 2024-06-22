@@ -1,0 +1,506 @@
+.afterLogingBackgroundColor{
+  height:100%;
+  width:100%;
+  background-color:hsl(156, 2%, 43%)
+}
+
+.overlay{
+  position: fixed; /* 或者 absolute */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(230,230,230); /* 半透明灰色背景 */
+  z-index: 9999; /* 确保它在最上层 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  height: 50%;
+}
+
+.mainWordTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.personalData {
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  margin-top: 90px;
+}
+
+.personalData > div {
+  margin-left: 45px;
+}
+
+.mainTitle {
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.mainTitle > div {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.personalDataButton {
+  margin-right:15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  background-color: #abc8bc;
+  outline: none;
+  /* 添加立体感阴影效果 */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3), 0px 8px 10px rgba(0, 0, 0, 0.2);
+  /* 添加按钮悬停时的过渡效果 */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* 悬停时的样式 */
+.personalDataButton:hover {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3), 0px 6px 15px rgba(0, 0, 0, 0.2);
+  /* 添加向上浮动效果 */
+  transform: scale(1.1);
+}
+
+.custom-fab:hover {
+  background-color: #00917c; /* 设置 hover 时的背景颜色 */
+}
+
+.writeName div {
+  flex-wrap: rap;
+  width: 40%;
+}
+
+.writeName div:nth-child(1) {
+  margin-right: 30px;
+}
+
+.writeName div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.fab-content {
+  display: flex;
+  align-items: center;
+}
+
+.fab-content span {
+  margin-left: 5px; /* 調整文字與圖示之間的間距 */
+}
+
+.editPersonGender {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.editPersonalGender > div {
+  width: 45%;
+}
+
+.editPersonalGender > div > div {
+  margin-top: 10px;
+}
+
+.editPersonalGender div div input {
+  margin-right: 2px;
+}
+
+.maleEditData {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.femaleEditData {
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+.writeBirthday {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.writeBirthday div {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.writeBirthdayYear {
+  margin-right: 30px;
+}
+
+.writeBirthdayMonth {
+  margin-right: 30px;
+}
+
+.writeAddress {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.writeAddressCity {
+  margin-right: 30px;
+}
+
+.writeAddressDistrict {
+  margin-right: 30px;
+}
+
+.editPassword {
+  width: 57%;
+}
+
+.writeAddressPassword {
+  display: flex;
+  margin-top: 15px;
+}
+
+.ifShowPassword {
+  margin-left: 5px;
+  font-size: 13px;
+  width: 100px;
+}
+
+.writePasswordContainer {
+  display: flex;
+  align-items: center;
+}
+
+.checkboxContainer {
+  margin-left: 10px; /* 調整間距 */
+}
+
+.writeAddressPhone {
+  display: flex;
+  margin-top: 15px;
+}
+
+.writeAddress div {
+  width: 40%;
+  margin-top: 10px;
+}
+
+.writeAddress .liveAddress {
+  width: 86%;
+}
+
+.editPersonalButton div {
+  width: 25%;
+}
+
+.labelEditPersonData {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.textEditPersonData {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.textEditPersonData::placeholder {
+  color: black;
+}
+
+.writeBirthday select {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.writeAddress select {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #abc8bc;
+  /* 下划线颜色和样式可以根据需求进行调整 */
+  outline: none;
+  /* 去除默认的输入框轮廓样式 */
+  border-radius: 0px;
+  height: 30px;
+  /* 將高度設置為 25px */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.editPersonalButton {
+  margin-bottom: 35px;
+  margin-right: 60px;
+}
+
+.editPersonalButton div:nth-child(1) {
+  margin-right: 20%;
+}
+
+.editPersonalButton div {
+  width: 100px;
+}
+
+.editPersonalButton {
+  margin-top: 30px;
+  justify-content: center;
+  display: flex;
+}
+
+.editPersonalButton div button[type='submit'] {
+  font-weight: 600;
+  height: 40px;
+  border: none;
+
+  border-radius: 5px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+/* 当按钮被悬停时 */
+.editPersonalButton div button:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+  color: #00917c;
+}
+
+.form-control {
+  margin-top: 5px;
+  background-color: #f8f9fa;
+  /* 设置输入框背景颜色为浅灰色 */
+}
+
+.form-control:focus {
+  border-color: #eea68d;
+  /* 获取焦点时的外边框颜色为浅橘色 */
+  box-shadow: 0 0 0 0.1rem #eea68d;
+  /* 可选的获取焦点时阴影效果 */
+}
+
+/* 将占位符颜色设置为黑色 */
+.writePhone input {
+  height: 30px;
+}
+
+/* .EditButtonShow{
+  display:block;
+}
+
+.EditButtonDisappear{
+  display:none;
+} */
+
+.custom-btn {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #00917c;
+  background: transparent;
+  font-weight: bold;
+  /* transform: scale(1.1); */
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* 在此處添加要應用於較小螢幕時的樣式 */
+
+  .personalDataButton{
+    margin-right:0px;
+  }
+  .mainTitle {
+    margin-top: 0px;
+  }
+
+  .topContainer {
+    width: 68%;
+  }
+  .personalData {
+    width: 100%;
+  }
+
+  .formContainer {
+    padding: 25px;
+  }
+
+  .personalData > div {
+    margin-left: 0px;
+  }
+
+  .writeName div {
+    width: 30%;
+  }
+
+  .writeBirthday {
+    flex-wrap: nowrap;
+  }
+
+  .writeBirthday div {
+    width: 30%;
+    margin-top: 0px;
+  }
+
+  .writeAddress {
+    flex-wrap: nowrap;
+  }
+
+  .writeAddress div {
+    width: 30%;
+    margin-top: 0px;
+  }
+
+  .writeAddress .liveAddress {
+    width: 30%;
+  }
+
+  .writeBirthday select {
+    font-size: 16px;
+  }
+
+  .writeAddress select {
+    font-size: 16px;
+  }
+
+  .checkPassword {
+    transform: scale(1);
+  }
+
+  .editPassword {
+    width: 40%;
+  }
+
+  .ifShowPassword {
+    font-size: 13px;
+  }
+
+  .writePhone {
+    width: 30%;
+  }
+
+  .phone {
+    width: 20%;
+    font-size: 16px;
+  }
+
+  .editPersonalButton {
+    display: flex;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+
+  .editPersonalButton div:nth-child(1) {
+    margin-right: 20%;
+  }
+
+  .editPersonalButton div {
+    width: 110px;
+  }
+}

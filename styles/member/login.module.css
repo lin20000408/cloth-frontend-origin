@@ -1,0 +1,230 @@
+.topContainer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.loginForm {
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  width: 500px;
+  margin-top: 150px;
+}
+
+.smallContainer {
+  margin-top: 90px;
+  width:90%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loginFormWelcome {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+
+
+
+.custom-btn {
+  width: 100%;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: transform 0.3s ease;
+}
+.btn-7 {
+  background: #00917c;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  overflow: hidden;
+}
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-7:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-7:hover {
+  color: #00917c;
+  background: transparent;
+  font-weight: bold;
+  /* transform: scale(1.1); */
+}
+.btn-7:hover:before {
+  height: 100%;
+}
+.btn-7:hover:after {
+  width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: #00917c;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9),
+    -4px -4px 5px 0px rgba(255, 255, 255, 0.9),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-7 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-7 span:after {
+  height: 2px;
+  width: 0%;
+}
+.btn-7 span:hover:before {
+  height: 100%;
+}
+.btn-7 span:hover:after {
+  width: 100%;
+}
+
+.btn-custom {
+  color: black;
+  /* 设置字体颜色为黑色 */
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+  border: 1px solid rgb(157, 145, 145);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  margin-right: 5px;
+  /* 调整图标与文字之间的间距 */
+}
+
+.btn.btn-outline-dark {
+  justify-content: center;
+  /* 图标和文字都居中显示 */
+}
+
+.btn-custom:hover {
+  background-color: black;
+  /* 悬停时背景颜色变为黑色 */
+  color: white;
+  /* 悬停时文字颜色变为白色 */
+}
+
+.form-controlFrame {
+  border: 1px solid rgb(157, 145, 145);
+  background-color: rgba(var(--bs-bgColor-rgb), var(--bs-bg-opacity));
+}
+
+.form-controlFrame:focus {
+  border-color: #fefcfb;
+  /* 获取焦点时的外边框颜色为浅橘色 */
+  box-shadow: 0 0 0 0.1rem #00917c;
+  /* 可选的获取焦点时阴影效果 */
+}
+
+.quickLogin {
+  width: 40%;
+}
+
+.RememberAccount {
+  margin-bottom: 15px;
+}
+
+.forgotPasswordLink {
+  text-decoration: none;
+}
+
+.forgotPasswordLink:hover {
+  color: #f08d6c !important;
+}
+
+.hasNotAccount {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.text-orange {
+  color: #eea68d !important;
+  /* 點擊註冊 橘色 */
+}
+
+.register {
+  text-decoration: none;
+}
+
+.text-orange:hover {
+  color: #f08d6c !important;
+  /* 點擊註冊 橘色 */
+}
+
+.twoQuickLogin {
+  width: 100%;
+}
+
+.quickLogin button {
+  width: 100%;
+}
+
+/* footer {
+  margin-top: 50px;
+} */
+@media screen and (min-width: 414px) {
+  .loginForm {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 768px) {
+
+  .loginForm {
+    width: 600px;
+  }
+
+  .btn-text {
+    font-size: 16px;
+  }
+
+  .quickLogin {
+    width: 40%;
+  }
+}

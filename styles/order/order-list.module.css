@@ -1,0 +1,106 @@
+.orderlist-session {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0;
+  height: auto;
+  width: 75%;
+}
+.all-list {
+  border: 3px solid #abc8bc;
+  border-radius: 10px;
+  width: 97%;
+  height: 170px;
+}
+/* 整體滾動條樣式 */
+.barList::-webkit-scrollbar{
+width: 12px;
+}
+  /* 滾動條的滑塊 */
+.barList::-webkit-scrollbar-thumb {
+  background-color: #ABC8BC; /* 滑塊顏色 */
+  border-radius: 6px; /* 滑塊圓角 */
+}
+ /* 滾動條的軌道 */
+.barList::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 軌道顏色 */
+  border-radius: 6px; /* 軌道圓角 */
+}
+.part-right {
+  width: 100%;
+}
+
+.ords-list-select {
+  margin: 0 0 16px 0;
+  height: 50px;
+}
+
+.ords-list-select a {
+  color: inherit;
+  padding: 0;
+  margin: 0;
+}
+.ords-list-selected {
+  border-bottom: 3px solid #E16949; /* 确保有边框宽度 */
+  padding: 11px 0 !important;
+  font-weight: 700;
+}
+.status-button{
+  background-color: #ABC8BC;
+  padding:12px;
+border:#ABC8BC;
+  color:white
+}
+.status-button:hover{
+  color: #00917c;
+  font-weight: 700;
+}
+.status-button-clicked{
+  background-color: #ABC8BC;
+  border-bottom:3px solid #00917c;
+  border-top:#ABC8BC;
+  border-right:#ABC8BC;
+  border-left:#ABC8BC;
+  padding:12px;
+  color:white
+}
+.product-info {
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* 手機版 */
+@media (max-width: 768px) {
+  .orderlist-session {
+    margin-top: 90px;
+    display: block;
+    width: 100%;
+  }
+  .part-right {
+    width: 100%;
+  }
+  .ords-list-select {
+    margin-top: 10px;
+    /* 设置为行，内容将水平排列 */
+    overflow: scroll;
+    width: auto;
+    flex-wrap: nowrap;
+    /* 如果内容超出容器宽度，添加水平滚动条 */
+  }
+  .ords-list-select a {
+    color: inherit;
+    width: 90px;
+  }
+  .ords-list-select button {
+    color: inherit;
+    width: 100px;
+  }
+  .ords-list-select::-webkit-scrollbar {
+    display: none;
+  }
+  .dot{
+    display: none;
+  }
+  .product-info {
+    padding-left: 5px;
+  }
+}

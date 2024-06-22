@@ -1,0 +1,55 @@
+[
+    {
+      "colorology_id": 1,
+      "basic_color_upper_body_text_1": "乳白色",
+      "basic_color_upper_body_text_2": "灰色",
+      "basic_color_upper_body_text_3": "藍色",
+      "basic_color_lower_body_text_1": "藍色",
+      "basic_color_lower_body_text_2": "乳白色",
+      "basic_color_lower_body_text_3": "咖啡棕色",
+      "bright_color_upper_body_text_1": "粉紅色",
+      "bright_color_upper_body_text_2": "紅色",
+      "bright_color_lower_body_text_1": "黃色",
+      "bright_color_lower_body_text_2": "水藍色"
+    },
+    {
+      "colorology_id": 2,
+      "basic_color_upper_body_text_1": "白色",
+      "basic_color_upper_body_text_2": "淺灰色",
+      "basic_color_upper_body_text_3": "天空灰色",
+      "basic_color_lower_body_text_1": "暗藍色",
+      "basic_color_lower_body_text_2": "白色",
+      "basic_color_lower_body_text_3": "棕色",
+      "bright_color_upper_body_text_1": "水藍色",
+      "bright_color_upper_body_text_2": "覆盆子色",
+      "bright_color_lower_body_text_1": "柑橘黃色",
+      "bright_color_lower_body_text_2": "淺紫色"
+    },
+    {
+      "colorology_id": 3,
+      "basic_color_upper_body_text_1": "香草色",
+      "basic_color_upper_body_text_2": "泥灰色",
+      "basic_color_upper_body_text_3": "巧克力色",
+      "basic_color_lower_body_text_1": "巧克力色",
+      "basic_color_lower_body_text_2": "淺棕色",
+      "basic_color_lower_body_text_3": "亞麻灰色",
+      "bright_color_upper_body_text_1": "鮭魚粉色",
+      "bright_color_upper_body_text_2": "莫蘭迪黃色",
+      "bright_color_lower_body_text_1": "瑪瑙紅色",
+      "bright_color_lower_body_text_2": "尼羅藍色"
+    },
+    {
+      "colorology_id": 4,
+      "basic_color_upper_body_text_1": "白色",
+      "basic_color_upper_body_text_2": "銀灰色",
+      "basic_color_upper_body_text_3": "勃根地紅色",
+      "basic_color_lower_body_text_1": "銀灰色",
+      "basic_color_lower_body_text_2": "鐵灰色",
+      "basic_color_lower_body_text_3": "黑色",
+      "bright_color_upper_body_text_1": "水晶紫色",
+      "bright_color_upper_body_text_2": "桃紅色",
+      "bright_color_lower_body_text_1": "珍珠粉色",
+      "bright_color_lower_body_text_2": "綠色"
+    }
+  ]
+  

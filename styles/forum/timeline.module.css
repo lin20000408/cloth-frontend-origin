@@ -1,0 +1,24 @@
+#page-title {
+  padding-top: 70px;
+}
+
+main {
+  width: 600px;
+}
+
+.avatar img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+#side-avatar {
+  width: 128px;
+  height: 128px;
+}
+
+#trending-posts .trending-post-item {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+}
